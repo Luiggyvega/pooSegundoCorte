@@ -1,5 +1,7 @@
 package com.programacion;
 
+import com.programacion.servicios.EmpleadoServicio;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -8,6 +10,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        EmpleadoServicio empleadoServicio = new EmpleadoServicio();
+        empleadoServicio.menu();
+
 //        File file = new File("src/main/resources/datos/empleado.json");
 //        System.out.printf("Does it exist? " +file.exists() + "\n");
 //        System.out.println("the file has " + file.length() + " bytes" );
